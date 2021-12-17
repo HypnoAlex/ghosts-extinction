@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+* {
+    font-family: 'Baloo 2', cursive;
+    position: relative;
+    top: 15px;
+}
+
+h1 {
+    font-size: 6vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+
+h4 {
+    font-size: 2vw;
+}
+
+hr {
+    background-color: white;
+    width: 20%;
+    left: -800px;
+}

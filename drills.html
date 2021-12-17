@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "https://bootswatch.com/4/darkly/bootstrap.css">
+    <link rel = "stylesheet" href = "./styles.css">
+
+    <title>Extinction In-Depth Calculations</title>
+</head>
+<body onload = "showText()">
+    <center>
+        <h1>Extinction In-Depth Calculations</h1>
+        <h2 id = "mode">Mode: Core</h2>
+        <h2 id = "relics">Relics: 0</h2>
+        <button onclick = casual() class = "btn btn-primary" style = "font-size: 1.5vw">Casual</button>
+        <button onclick = core() class = "btn btn-primary" style = "font-size: 1.5vw">Core</button>
+        <button onclick = hardcore() class = "btn btn-primary" style = "font-size: 1.5vw">Hardcore</button><br><br>
+
+        <button onclick = solo() class = "btn btn-warning" style = "font-size: 1.5vw">Solo</button>
+        <button onclick = coop() class = "btn btn-warning" style = "font-size: 1.5vw">Co-op</button><br><br>
+
+        <button onclick = processRelic(0) class = "btn btn-danger" style = "font-size: 1.5vw;">Zero relics</button>
+        <button onclick = processRelic(1) class = "btn btn-danger" style = "font-size: 1.5vw">One relic</button>
+        <button onclick = processRelic(2) class = "btn btn-danger" style = "font-size: 1.5vw">Two relics</button>
+        <button onclick = processRelic(3) class = "btn btn-danger" style = "font-size: 1.5vw">Three relics</button>
+        <button onclick = processRelic(4) class = "btn btn-danger" style = "font-size: 1.5vw">Four relics</button>
+        <button onclick = processRelic(5) class = "btn btn-danger" style = "font-size: 1.5vw">Five relics</button>
+        <button onclick = processRelic(6) class = "btn btn-danger" style = "font-size: 1.5vw">Six relics</button>
+        <button onclick = processRelic(7) class = "btn btn-danger" style = "font-size: 1.5vw">Seven relics</button>
+        <button onclick = processRelic(8) class = "btn btn-danger" style = "font-size: 1.5vw">Eight relics</button>
+        <button onclick = processRelic(9) class = "btn btn-danger" style = "font-size: 1.5vw">Nine relics</button>
+        <button onclick = processRelic(10) class = "btn btn-danger" style = "font-size: 1.5vw">Ten relics</button>
+    </center>
+    <div class = "wrap" style = "position: relative; top: 13vw">
+        <h1>Drill scores</h1>
+        <h2 style = "color: #b894ff">First area</h2>
+        <h3 id = "drill1">Drill Protection: 0</h3>
+        <h3 id = "pskill1">Personal Skill: 0</h3>
+        <h3 id = "challenge1">Challenge Complete: 0</h3>
+        <h3 id = "relicbonus1">Relic Bonus: 0</h3>
+        <h3 style = "color: #b894ff" id = "optimal1">Score Earned: 0</h3><hr>
+        <h4 id = "drillfail1">{Drill fail 1 text}</h4>
+        <h4 id = "challengefail1">{Challenge fail 1 text}</h4>
+
+        <hr>
+        <h2 style = "color: #b894ff">Second area</h2>
+        <h3 id = "drill2">Drill Protection: 0</h3>
+        <h3 id = "pskill2">Personal Skill: 0</h3>
+        <h3 id = "challenge2">Challenge Complete: 0</h3>
+        <h3 id = "relicbonus2">Relic Bonus: 0</h3>
+        <h3 style = "color: #b894ff" id = "optimal2">Score Earned: 0</h3><hr>
+        <h4 id = "drillfail2">{Drill fail 2 text}</h4>
+        <h4 id = "challengefail2">{Challenge fail 2 text}</h4>
+        <hr>
+
+        <h2 style = "color: #b894ff">Third area</h2>
+        <h3 id = "drill3">Drill Protection: 0</h3>
+        <h3 id = "pskill3">Personal Skill: 0</h3>
+        <h3 id = "challenge3">Challenge Complete: 0</h3>
+        <h3 id = "relicbonus3">Relic Bonus: 0</h3>
+        <h3 style = "color: #b894ff" id = "optimal3">Score Earned: 0</h3><hr>
+        <h4 id = "drillfail3">{Drill fail 3 text}</h4>
+        <h4 id = "challengefail3">{Challenge fail 3 text}</h4>
+        <hr>
+    </div>
+</body>
+<script src = "drills.js"></script>
+</html>

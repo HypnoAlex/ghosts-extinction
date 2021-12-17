@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "https://bootswatch.com/4/darkly/bootstrap.css">
+    <link rel = "stylesheet" href = "./styles.css">
+
+    <title>Extinction Score Calculator</title>
+</head>
+<body onload = "pocText()">
+    <center>
+        <h1>Extinction Score Calculator</h1>
+        <h2 id = "map">Map: Point of Contact</h2>
+        <h2 id = "mode">Mode: Core</h2>
+        <h2 id = "relics">Relics: 0</h2>
+        <button onclick = casual() class = "btn btn-primary" style = "font-size: 1.5vw">Casual</button>
+        <button onclick = core() class = "btn btn-primary" style = "font-size: 1.5vw">Core</button>
+        <button onclick = hardcore() class = "btn btn-primary" style = "font-size: 1.5vw">Hardcore</button><br><br>
+
+        <button onclick = processRelic(0) class = "btn btn-primary" style = "font-size: 1.5vw;">Zero relics</button>
+        <button onclick = processRelic(1) class = "btn btn-primary" style = "font-size: 1.5vw">One relic</button>
+        <button onclick = processRelic(2) class = "btn btn-primary" style = "font-size: 1.5vw">Two relics</button>
+        <button onclick = processRelic(3) class = "btn btn-primary" style = "font-size: 1.5vw">Three relics</button>
+        <button onclick = processRelic(4) class = "btn btn-primary" style = "font-size: 1.5vw">Four relics</button>
+        <button onclick = processRelic(5) class = "btn btn-primary" style = "font-size: 1.5vw">Five relics</button>
+        <button onclick = processRelic(6) class = "btn btn-primary" style = "font-size: 1.5vw">Six relics</button>
+        <button onclick = processRelic(7) class = "btn btn-primary" style = "font-size: 1.5vw">Seven relics</button>
+        <button onclick = processRelic(8) class = "btn btn-primary" style = "font-size: 1.5vw">Eight relics</button>
+        <button onclick = processRelic(9) class = "btn btn-primary" style = "font-size: 1.5vw">Nine relics</button>
+        <button onclick = processRelic(10) class = "btn btn-primary" style = "font-size: 1.5vw">Ten relics</button>
+    </center>
+    <div class = "wrap" style = "position: relative; top: 13vw">
+        <h3 id = "hive1"></h3>
+        <hr>
+        <h3 style = "color: #b894ff" id = "optimal1">Optimal: 0</h3>
+        <h3 id = "hive2"></h3>
+        <h3 id = "hive3"></h3>
+        <h3 id = "hive4"></h3>
+        <h3 id = "hive5"></h3>
+        <hr>
+        <h3 style = "color: #b894ff" id = "optimal2">Optimal: 0</h3>
+        <h3 id = "hive6"></h3>
+        <h3 id = "hive7"></h3>
+        <h3 id = "hive8"></h3>
+        <h3 id = "hive9"></h3>
+        <hr>
+        <h3 style = "color: #b894ff" id = "optimal3">Optimal: 0</h3>
+        <h3 id = "hive10"></h3>
+        <h3 id = "hive11"></h3>
+        <h3 id = "hive12"></h3>
+        <h3 id = "hive13"></h3>
+        <h3 id = "hive14"></h3>
+        <hr>
+        <h3 id = "escape">Estimated score gain from 2m30s escape: 0</h3>
+        <h3 id = "final">Final score: 0</h3>
+    </div>
+</body>
+<script src = "calc.js"></script>
+</html>
